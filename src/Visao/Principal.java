@@ -216,11 +216,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabela_RankingGeral = new javax.swing.JTable();
-        painel_rankTurma = new javax.swing.JPanel();
+        painel_rankCurso = new javax.swing.JPanel();
         jLabel50 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabela_RankingTurma = new javax.swing.JTable();
-        painel_rankIdade = new javax.swing.JPanel();
+        painel_rankDisciplina = new javax.swing.JPanel();
         jLabel51 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tabela_rankIdade = new javax.swing.JTable();
@@ -427,11 +427,8 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jLabel22)
                 .addGap(536, 536, 536)
                 .addGroup(painel_frontal_cimaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton29)
                     .addGroup(painel_frontal_cimaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton29))
-                    .addGroup(painel_frontal_cimaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel74)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(combo_anoLetivo, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1367,7 +1364,7 @@ public class Principal extends javax.swing.JFrame {
 
         painel_ranking.setLayout(new java.awt.CardLayout());
 
-        painel_rankGeral.setBackground(new java.awt.Color(51, 51, 51));
+        painel_rankGeral.setBackground(new java.awt.Color(243, 104, 52));
         painel_rankGeral.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 painel_rankGeralFocusGained(evt);
@@ -1420,11 +1417,11 @@ public class Principal extends javax.swing.JFrame {
 
         painel_ranking.add(painel_rankGeral, "cartao_rankGeral");
 
-        painel_rankTurma.setBackground(new java.awt.Color(125, 186, 105));
+        painel_rankCurso.setBackground(new java.awt.Color(125, 186, 105));
 
         jLabel50.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel50.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel50.setText("Rank-Turma");
+        jLabel50.setText("Rank-Curso");
 
         tabela_RankingTurma.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         tabela_RankingTurma.setModel(new javax.swing.table.DefaultTableModel(
@@ -1437,22 +1434,22 @@ public class Principal extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tabela_RankingTurma);
 
-        javax.swing.GroupLayout painel_rankTurmaLayout = new javax.swing.GroupLayout(painel_rankTurma);
-        painel_rankTurma.setLayout(painel_rankTurmaLayout);
-        painel_rankTurmaLayout.setHorizontalGroup(
-            painel_rankTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel_rankTurmaLayout.createSequentialGroup()
+        javax.swing.GroupLayout painel_rankCursoLayout = new javax.swing.GroupLayout(painel_rankCurso);
+        painel_rankCurso.setLayout(painel_rankCursoLayout);
+        painel_rankCursoLayout.setHorizontalGroup(
+            painel_rankCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel_rankCursoLayout.createSequentialGroup()
                 .addGap(143, 143, 143)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(103, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel_rankTurmaLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel_rankCursoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel50)
                 .addGap(345, 345, 345))
         );
-        painel_rankTurmaLayout.setVerticalGroup(
-            painel_rankTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel_rankTurmaLayout.createSequentialGroup()
+        painel_rankCursoLayout.setVerticalGroup(
+            painel_rankCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel_rankCursoLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel50)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1460,18 +1457,18 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        painel_ranking.add(painel_rankTurma, "cartao_rankTurma");
+        painel_ranking.add(painel_rankCurso, "cartao_rankTurma");
 
-        painel_rankIdade.setBackground(new java.awt.Color(92, 143, 198));
-        painel_rankIdade.addComponentListener(new java.awt.event.ComponentAdapter() {
+        painel_rankDisciplina.setBackground(new java.awt.Color(92, 143, 198));
+        painel_rankDisciplina.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
-                painel_rankIdadeComponentShown(evt);
+                painel_rankDisciplinaComponentShown(evt);
             }
         });
 
         jLabel51.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setText("Rank-Idade");
+        jLabel51.setText("Rank-Disciplina");
 
         tabela_rankIdade.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         tabela_rankIdade.setModel(new javax.swing.table.DefaultTableModel(
@@ -1484,22 +1481,22 @@ public class Principal extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(tabela_rankIdade);
 
-        javax.swing.GroupLayout painel_rankIdadeLayout = new javax.swing.GroupLayout(painel_rankIdade);
-        painel_rankIdade.setLayout(painel_rankIdadeLayout);
-        painel_rankIdadeLayout.setHorizontalGroup(
-            painel_rankIdadeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel_rankIdadeLayout.createSequentialGroup()
+        javax.swing.GroupLayout painel_rankDisciplinaLayout = new javax.swing.GroupLayout(painel_rankDisciplina);
+        painel_rankDisciplina.setLayout(painel_rankDisciplinaLayout);
+        painel_rankDisciplinaLayout.setHorizontalGroup(
+            painel_rankDisciplinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel_rankDisciplinaLayout.createSequentialGroup()
                 .addGap(349, 349, 349)
                 .addComponent(jLabel51)
-                .addContainerGap(317, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel_rankIdadeLayout.createSequentialGroup()
+                .addContainerGap(296, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel_rankDisciplinaLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(113, 113, 113))
         );
-        painel_rankIdadeLayout.setVerticalGroup(
-            painel_rankIdadeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel_rankIdadeLayout.createSequentialGroup()
+        painel_rankDisciplinaLayout.setVerticalGroup(
+            painel_rankDisciplinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel_rankDisciplinaLayout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(jLabel51)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1507,7 +1504,7 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        painel_ranking.add(painel_rankIdade, "cartao_rankIdade");
+        painel_ranking.add(painel_rankDisciplina, "cartao_rankIdade");
 
         painel_rankClasse.setBackground(new java.awt.Color(143, 88, 155));
 
@@ -2608,9 +2605,9 @@ public class Principal extends javax.swing.JFrame {
         contacto.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
 
-    private void painel_rankIdadeComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_painel_rankIdadeComponentShown
+    private void painel_rankDisciplinaComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_painel_rankDisciplinaComponentShown
         // TODO add your handling code here:
-    }//GEN-LAST:event_painel_rankIdadeComponentShown
+    }//GEN-LAST:event_painel_rankDisciplinaComponentShown
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         // TODO add your handling code here:
@@ -2809,10 +2806,10 @@ public class Principal extends javax.swing.JFrame {
     public javax.swing.JPanel painel_frontal_baixo;
     public javax.swing.JPanel painel_frontal_cima;
     private javax.swing.JPanel painel_rankClasse;
+    private javax.swing.JPanel painel_rankCurso;
+    private javax.swing.JPanel painel_rankDisciplina;
     private javax.swing.JPanel painel_rankGeral;
-    private javax.swing.JPanel painel_rankIdade;
     private javax.swing.JPanel painel_rankInstrucoes;
-    private javax.swing.JPanel painel_rankTurma;
     private javax.swing.JPanel painel_ranking;
     private javax.swing.JPanel premiacao;
     private javax.swing.JPanel professor_painel;

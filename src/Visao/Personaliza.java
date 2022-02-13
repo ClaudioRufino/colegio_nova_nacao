@@ -118,7 +118,7 @@ public class Personaliza extends javax.swing.JDialog {
         jLabel2.setText("Alterar Imagem");
 
         btn_imagem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Visao/Imagens/sala-de-aula-miniatura.jpg"))); // NOI18N
-        btn_imagem1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 4, true));
+        btn_imagem1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 137, 233), 4, true));
         btn_imagem1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btn_imagem1MouseEntered(evt);
@@ -131,7 +131,7 @@ public class Personaliza extends javax.swing.JDialog {
         });
 
         btn_imagem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Visao/Imagens/sala-de-aula1-miniatura.jpg"))); // NOI18N
-        btn_imagem2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 4, true));
+        btn_imagem2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 137, 233), 4, true));
         btn_imagem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_imagem2ActionPerformed(evt);
@@ -139,7 +139,7 @@ public class Personaliza extends javax.swing.JDialog {
         });
 
         btn_imagem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Visao/Imagens/sala-de-aula2-miniatura.jpg"))); // NOI18N
-        btn_imagem3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 4, true));
+        btn_imagem3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(94, 137, 233), 4, true));
         btn_imagem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_imagem3ActionPerformed(evt);
